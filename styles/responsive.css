@@ -100,7 +100,7 @@ main{
 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
    gap:30px;
    margin-top:49px;
    
@@ -118,23 +118,82 @@ main{
 }
 
 .card-container button{
-    width:350px;
+    width:270px;
     height: 50px;
     background-color: rgb(233, 90, 8);
     color:rgb(255, 255, 255);
     font-weight: 600;
     border:none;
     font-size: 1rem;
+    cursor: pointer;
+
     
+}
+.card-container button:hover{
+    background-color: burlywood;
+    color: black;
 }
 .center{
     text-align: center;
 }
 .center img{
-    width:350px;
+    width:270px;
 }
 
+.third-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 210px;
+    gap:90px;
+}
 
+.flower-store{
+    position: relative;
+}
+.trusted{
+    position:absolute;
+    top:-150px;
+    right:-120px;
+    width:300px;
+    height:300px;
+    
+}
+.flower-related h2{
+      font-size: 3.5rem;
+      font-weight: 700;
+      color:rgb(0, 0, 0);
+      padding-bottom: 25px;
+}
+
+.flower-related li{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+.list{
+    padding:25px 0;
+}
+
+.latest-container{
+    text-align: center;
+    margin-top:150px;
+}
+.latest-container h3{
+  font-size: 3rem;
+  font-weight: 700;
+  color:rgba(233, 90, 8, 1);
+  padding-bottom: 16px;
+}
+.Deals{
+    color:rgba(0, 0, 0, 1);
+}
+
+.latest-container p{
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: rgba(0, 0, 0, 0.5);
+}
 @media screen and (max-width:576px) {
    .header-container{
     max-width:100%;
@@ -201,5 +260,38 @@ main{
     margin-top: 60px;
  }
  
+ .third-section-container{
+    flex-direction: column;
+    margin-top:40px;
+ }
+ .new-img{
+    width:358px;
+    height:396px
+ }
+ .flower-related{
+    margin-left: 40px;
+   
+ }
+ 
+ .flower-related h2{
+      font-size: 1.5rem;
+      margin-top: -40px;
+ }
+ .flower-related li{
+    font-size: 0.8rem;
+ }
+.trusted{
+    display: none;
+}
+
+.latest-container {
+  margin-top: 143px;
+}
+.latest-container h3{
+    font-size: 1.5rem;
+}
+.latest-container p{
+    font-size: 0.9rem;
+}
 }
 
