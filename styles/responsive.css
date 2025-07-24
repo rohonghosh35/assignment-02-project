@@ -3,7 +3,6 @@
     padding:0;
     box-sizing:border-box;
 }
-
 .noto-serif-normal {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -146,6 +145,8 @@ main{
 
     
 }
+
+
 .card-container button:hover{
     background-color: burlywood;
     color: black;
@@ -164,16 +165,25 @@ main{
     margin-top: 210px;
     gap:90px;
 }
-
+@keyframes rotator {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .flower-store{
     position: relative;
 }
+
 .trusted{
     position:absolute;
     top:-150px;
     right:-120px;
     width:300px;
     height:300px;
+    animation: rotator 5s linear infinite;
     
 }
 .flower-related h2{
@@ -548,7 +558,7 @@ footer{
 .footer-section{
    
     background-size: cover;
-   width: 393px;
+  
    height: 276px;
     margin-top: 40px; 
     margin-bottom: 30px;
